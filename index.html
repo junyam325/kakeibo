@@ -1,18 +1,50 @@
-<html lang="ja">
+<!--言語はjapanese プログラム
+    に対して使用する言語を認識させる-->
 
-<head> </head>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <!--ファイル名は～で、そのファイルはスタイルシートである。-->
+    <!--typeでcssとプログラム側に認識させる-->
+</head>
+<!--htmlタグの後、bodyタグの前に書く-->
 
 <body>
-    <h1>Hello World!</h1>
-    <div>aaa</div>
-    <div>bbb</div>
-    <span>ccc</span>
-    <span>ddd</span>
-    <p>Lets Make Funny App!!</p>
-    <a href="https://www.google.com">click me!</a>
-    <form method="get" action="">
-        <input type="text" /> <input type="submit" value="click me!" /><input type="checkbox" checked /><input type="file" accept="image/png" />
-    </form>
+    <h1>シンプル家計簿</h1>
+    <div>
+        <h2>データ登録</h2>
+        <hr />
+        <p>
+            <label>登録日付</label>
+            <input type="date" />
+        </p>
+        <p><label>登録内容</label> <input type="text" id="inputform-0" /></p>
+        <p><label>金額</label> <input type="text" id="inputform-1" /></p>
+        <input type="button" onclick="buttonClick()" value="登録" />
+        <input type="button" value="自動入力" />
+        <hr />
+    </div>
+    <p>
+        <input type="date" />～<input type="date" />
+        <input type="button" value="指定期間表示" />
+        <!--カテゴリ-->
+    </p>
+    <table>
+        <tr>
+            <th>日付</th>
+            <th>内容</th>
+            <th>金額</th>
+        </tr>
+        <tr>
+            <td>ああ</td>
+            <td>
+                <p id="outputmessage"></p>
+            </td>
+            <td>
+                <p id="outputmessage"></p>
+            </td>
+        </tr>
+    </table>
 </body>
+<script type="text/javascript" src="index.js"></script>
 
 </html>
