@@ -15,10 +15,10 @@
         <hr />
         <p>
             <label>登録日付</label>
-            <input type="date" />
+            <input type="date" id=inputform-0 />
         </p>
-        <p><label>登録内容</label> <input type="text" id="inputform-0" /></p>
-        <p><label>金額</label> <input type="text" id="inputform-1" /></p>
+        <p><label>登録内容</label> <input type="text" id="inputform-1" /></p>
+        <p><label>金額</label> <input type="text" id="inputform-2" /></p>
         <input type="button" onclick="buttonClick()" value="登録" />
         <input type="button" value="自動入力" />
         <hr />
@@ -28,22 +28,33 @@
         <input type="button" value="指定期間表示" />
         <!--カテゴリ-->
     </p>
-    <table>
+    <ul>
+        <li>
+            <p id="outputmessage-0"></p>
+            <p id="outputmessage-1"></p>
+            <p id="outputmessage-2"></p>
+        </li>
+    </ul>
+    <!-- <<table>
         <tr>
             <th>日付</th>
             <th>内容</th>
             <th>金額</th>
         </tr>
         <tr>
-            <td>ああ</td>
             <td>
-                <p id="outputmessage"></p>
+
             </td>
             <td>
-                <p id="outputmessage"></p>
+                <p id="outputmessage-1"></p>
+                </p>
+            </td>
+            <td>
+                <p id="outputmessage-2"></p>
+                </p>
             </td>
         </tr>
-    </table>
+    </table>> -->
 </body>
 <script type="text/javascript" src="index.js"></script>
 
